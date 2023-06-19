@@ -1,0 +1,214 @@
+.hot-badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 5px;
+    animation: pulse 1s infinite alternate;
+    transform: rotate(-5deg);
+}
+
+.carousel-container {
+    position: relative;
+  }
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Kolor przyciemnienia */
+    padding: 10px;
+    color: white;
+    text-align: center;
+    height: 101%;
+    width: 100%; /* Szerokość obszaru z sloganem */
+    z-index: 1; /* Wyświetlanie na wierzchu */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .carousel-caption h3 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+  }
+
+  .circle-image {
+    width: 100%; /* ustaw szerokość zdjęcia na 100% szerokości kontenera */
+    height: auto; /* zachowaj proporcje obrazu */
+    object-fit: cover; /* dopasuj obraz do rozmiaru kontenera */
+    clip-path: circle(50% at 50% 50%); /* utwórz efekt okręgu, 50% okręgu od środka kontenera */
+  }
+
+
+
+  .link-with-underline {
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .link-with-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -0.1px;
+    width: 100%;
+    height: 1.5px;
+    background: linear-gradient(to right, #FF0000, #482323); /* Gradient kolorów */
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .link-with-underline:hover::after {
+    transform: scaleX(1);
+  }
+
+
+
+
+@keyframes pulse {
+    0% {
+        font-size: 11px;
+        color: red;
+        transform: rotate(-5deg);
+    }
+    17% {
+        font-size: 12px;
+        color: blue;
+        transform: rotate(10deg);
+    }
+    34% {
+        font-size: 13px;
+        color: blueviolet;
+        transform: rotate(5deg);
+    }
+    50% {
+        font-size: 14px;
+        color: green;
+        transform: rotate(1deg);
+    }
+    67% {
+        font-size: 15px;
+        color: yellow;
+        transform: rotate(5deg);
+    }
+    83% {
+        font-size: 16px;
+        color: orange;
+        transform: rotate(10deg);
+    }
+    100% {
+        font-size: 17px;
+        color: red;
+        transform: rotate(-5deg);
+    }
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 20px;
+  } */
+
+
+  .nav-item {
+    font-size:18px;
+    text-transform:uppercase;
+    height:82px;
+    line-height:64px;
+  }
+  .flare {
+    background:#ef662b;
+  }
+  .flare a.nav-link {
+    color:#fff !important
+  }
+  .topbarElements > div:nth-of-type(1){
+    font-size:48px;
+    margin:12px 32px;
+    color:#ef662b
+  }
+  @media screen and (min-width:1040px){
+    .flare { margin-right:-15px; }
+  }
+  @media screen and (max-width:1029px){
+    .navbar-nav {
+      margin-bottom:15px;
+      text-align:center
+    }
+    .nav-item {
+      background : rgba(255,255,255,0.1);
+      margin:2px;
+    }
+  }
+
+
+
+
+  /* .gradient-custom-3 {
+
+    background: #84fab0;
+
+    background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+
+
+    background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+    } */
+
+    .gradient-custom-3 {
+
+        background: #c76d44;
+
+        background: -webkit-linear-gradient(to right, rgba(255, 173, 143, 0.937), rgba(246, 182, 118, 0.745));
+
+        background: linear-gradient(to right, rgba(250, 173, 132, 0.5), rgba(244, 219, 143, 0.5))
+        }
+
+    .gradient-custom-4 {
+    /* fallback for old browsers */
+    background: #84fab0;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, rgb(250, 234, 132), rgb(143, 183, 244));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, rgb(224, 250, 132), rgb(143, 148, 244))
+    }
+
+
+    .order-form .container {
+        color: #4c4c4c;
+        padding: 20px;
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1);
+        max-width: 650px;
+      }
+
+      .order-form-label {
+        margin: 8px 0 0 0;
+        font-size: 14px;
+        font-weight: bold;
+      }
+
+  .order-form-input,
+  .form-label,
+  .form-check-label {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+
+      }
+
+      .btn-submit:hover {
+        background-color: #0D47A1 !important;
+      }
