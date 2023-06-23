@@ -18,7 +18,8 @@
             <a href="{{ route('orders.create-order') }}" class="btn btn-primary">Utwórz zamówienie</a>
             @endif
         </div>
-        <table class="table">
+        <div class="table-responsive">
+            <table class="table table-responsive table-striped ">
             <thead>
                 <tr>
                     <th>client_id</th>
@@ -84,6 +85,7 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
     </div>
 
     <script>

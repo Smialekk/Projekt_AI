@@ -182,9 +182,6 @@
                 // Pobierz elementy formularza
                 const categorySelect = document.getElementById('category');
                 const subcategorySelect = document.getElementById('subcategory');
-
-
-
                 // Definiuj opcje podkategorii dla każdej kategorii
                 const subcategoryOptions = {
                     basic_state: [
@@ -198,15 +195,12 @@
                         @endforeach
                     ],
                 };
-
                 // Funkcja aktualizująca opcje w polu wyboru podkategorii
                 function updateSubcategoryOptions() {
                     const selectedCategory = categorySelect.value;
                     const options = subcategoryOptions[selectedCategory] || [];
-
                     // Usuń wszystkie opcje
                     subcategorySelect.innerHTML = '';
-
                     // Dodaj nowe opcje
                     options.forEach((option) => {
                         const { value, label } = option;
@@ -216,7 +210,6 @@
                         subcategorySelect.appendChild(optionElement);
                     });
                 }
-
                 // Nasłuchuj zdarzenia zmiany wybranej kategorii
                 categorySelect.addEventListener('change', updateSubcategoryOptions);
 

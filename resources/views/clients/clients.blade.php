@@ -19,7 +19,8 @@
             <h1>Lista użytkowników</h1>
             <a href="{{ route('register') }}" class="btn btn-primary">Dodaj klienta</a>
         </div>
-        <table class="table">
+        <div class="table-responsive">
+        <table class="table-responsive table-striped ">
             <thead>
                 <tr>
                     <th>Imię</th>
@@ -53,6 +54,7 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
     </div>
 
     <script>

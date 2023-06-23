@@ -17,7 +17,9 @@
             <h3>kod: KOD_PRACOWNICZY</h3>
             <a href="{{ route('register') }}" class="btn btn-primary">Dodaj pracownika</a>
         </div>
-        <table class="table">
+
+        <div class="table-responsive">
+        <table class="table table-responsive table-striped ">
             <thead>
                 <tr>
                     <th>Imię</th>
@@ -57,6 +59,7 @@
                 @endforeach
             </tbody>
         </table>
+        </div>
     </div>
 
     <script>

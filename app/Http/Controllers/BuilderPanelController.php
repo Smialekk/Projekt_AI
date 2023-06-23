@@ -16,7 +16,6 @@ class BuilderPanelController extends Controller
         ->select('employees.*')
         ->first();
 
-
         return view('employees.builderPanel', [
             'employee' => $employee
         ]);
@@ -25,12 +24,10 @@ class BuilderPanelController extends Controller
     public function edit($id)
     {
         $employee = Employees::find($id);
-
         // Sprawdź, czy pracownik jest zalogowanym pracownikiem
         if ($employee->user_id !== Auth::id()) {
             return redirect()->route('builderPanel')->with('error', 'Nie masz uprawnień do edycji tego pracownika');
         }
-
         return view('employees.builderPanel.edit', [
             'employee' => $employee
         ]);

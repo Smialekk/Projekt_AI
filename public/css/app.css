@@ -11,6 +11,10 @@
     transform: rotate(-5deg);
 }
 
+body {
+  overflow-x: hidden;
+}
+
 .carousel-container {
     position: relative;
   }
